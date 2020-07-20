@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        /* * {
+            box-sizing: border-box;
+        } */
+
+        body {
+            margin: 0px ;
+        }
+      
+
+         .topbar {
+            margin: 0px;
+            top: 0;
+            position: fixed;
+            width: 100%;
+           
+        }
+
+        a {
+            color: yellow;
+            display: block;
+            text-decoration: none;
+        }
+
+        ul {
+            z-index: 1;
+            margin: 0;
+            overflow:hidden;
+            padding: 0px;
+            list-style: none;
+        }
+        
+      .clearfix li {
+            text-align: center;
+            float:left;
+            margin: 0 auto;
+            /* height: 25px; */
+            border: 1px solid black;
+            width: 24.80%;
+            background-color: rgb(139, 120, 139);
+            color: yellow;
+            list-style: none;
+        }
+        li :hover {
+            background-color: rgb(9, 172, 90);
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+            width: 100%;
+        }
+        .side li {
+            text-align: center;
+            /* float:none; */
+            margin: 0;
+            border: 1px solid black;
+            width: 24.80%;
+            background-color: rgb(139, 120, 139);
+            color: yellow;
+            list-style: none;
+            position: relative;
+            
+        }
+
+        .menu li {
+            position: absolute;
+            display: none;
+            /* position: relative;
+            top: 6px; */
+            float: none;
+            width: 100%;
+            /* height: 25px;    */
+        }
+        li:hover .menu li {
+            display: block;
+        }
+
+        .content {
+            float: right;
+            margin-top: 35px;
+        }
+   
+      
+    </style>
+</head>
+<body>
+    <nav class="topbar">
+        <div class="clearfix">
+            <ul>
+                <li> <a href=""> home</a></li>
+                <li> <a href=""> our mision</a></li>
+                <li> <a href=""> our ingridients</a>
+                    <ul class="menu">
+                        <li><a href=""> Luck</a></li>
+                        <li><a href=""> Fortune</a></li>
+                        <li><a href=""> Happy</a></li>
+                    </ul>
+                </li>
+                <li> <a href=""> satisfied customers</a></li>
+            </ul>
+        </div>
+
+        <div class="side">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident delectus earum, sed quaerat quia blanditiis consectetur impedit numquam suscipit neque ea adipisci repellendus, molestias reiciendis aut. Sed voluptatibus animi sit quam voluptate maxime nihil amet, odit quasi corporis omnis dicta ipsa, nobis soluta obcaecati molestiae explicabo, quo a pariatur veniam eos? Aperiam optio nemo temporibus consectetur porro quod quia qui reprehenderit, deserunt quidem voluptatum excepturi iusto molestiae fuga blanditiis labore nihil minus, saepe rem quaerat ea obcaecati nulla vel dicta. Ab dolorem perferendis dicta suscipit facilis, cum architecto natus sapiente, maiores ullam tempora soluta, laboriosam nulla atque unde modi. Maiores ab fugit aperiam magnam laborum saepe ad, unde consequuntur numquam blanditiis molestiae nihil iusto sequi voluptatibus dicta, magni, dignissimos veniam. Amet recusandae, quae mollitia officia officiis ducimus illum quasi. Fuga sapiente beatae facere eaque excepturi? Dolore esse reprehenderit nesciunt odit consectetur iure vitae ratione labore soluta! Quisquam eum inventore deserunt.</p>
+        </div>
+    </nav>
+
+    
+
+  
+    
+</body>
+</html>
