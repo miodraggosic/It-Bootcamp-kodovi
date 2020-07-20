@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 32%;
+    border: dashed 2px black;
+    margin: 50px auto;
+    /* height: 150px; */
+}
+
+p:nth-child(1) {
+    background-color: cadetblue;
+}
+
+p:nth-child(2) {
+    background-color: rgb(218, 240, 25);
+}
+
+p:nth-child(3) {
+    background-color: rgb(197, 81, 110);
+}
