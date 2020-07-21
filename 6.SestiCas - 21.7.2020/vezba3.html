@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vezba3</title>
+</head>
+
+<style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            float: left;
+            
+            
+        }
+
+        /* mobile */
+@media only screen and (max-width: 480px) {
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        /* .slike img {
+            width: 100%;
+        } */
+    }
+
+@media only screen and (min-width: 488px ) {
+            
+           
+        
+                .col-1 {
+                    width: 8.33%;
+                }
+        
+                .col-2 {
+                    width: 16.66%;
+                }
+        
+                .col-3 {
+                    width: 25%;
+                }
+        
+                .col-4 {
+                    width: 33.32%;
+                }
+        
+                .col-5 {
+                    width: 41.66%;
+                }
+        
+                .col-6 {
+                    width: 50%;
+                }
+        
+                .col-7 {
+                    width: 58.33%;
+                }
+        
+                .col-8 {
+                    width: 66.66%;
+                }
+        
+                .col-9 {
+                    width: 75%;
+                }
+        
+                .col-10 {
+                    width: 83.33%;
+                }
+        
+                .col-11 {
+                    width: 91.66%;
+                }
+        
+                .col-12 {
+                    width: 100%;
+                }
+        
+                }
+
+                header, footer {
+                    background-color: darkturquoise;
+                    color: white;
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 25px;
+                }
+                
+
+                aside h3,h4,p {
+                    width: 100%;
+                }
+
+                nav h2 {
+                    border: 1px solid ;
+                    background-color: darkturquoise;
+                    width: 100%;
+                    padding: 10px;
+                   
+                }
+
+                .slike ul li{
+                    display: block;
+                    list-style-type: none;
+                    margin: 0;
+                    
+                }
+
+                .slike li img {
+                    width: 100%;
+                    /* margin: 10px 10px; */
+                }
+
+                footer {
+                    text-align: center;
+                    background-color: turquoise;
+                    height: 80px;
+                }
+
+                aside {
+                    background-color: rgb(218, 221, 170);
+                    display: block;
+                    height: 148px;
+                    text-align: center;
+                }
+                .foot {
+                    border: 1px solid black;
+                    margin: 10px auto;
+                    background-color: wheat;
+                }
+
+
+
+</style>
+<body>
+
+    <header class="col-12  "> Dodir Prirode</header>
+    
+    <nav class="col-4 ">
+            
+                <h2>Biljke</h2>
+                <h2>Zivotinje</h2>
+                <h2>Pejzazi</h2>
+            
+
+    </nav>
+
+    <aside class="col-8 ">
+        <h3> Podelite svoje fotografije prirode sa nama!</h3>
+             <h4> "Nema stvari koja bi bila tako vredna proucavanja kao priroda"</h4>
+             <p>Nikola Tesla</p>
+        
+    </aside>
+
+    <div class="slike">
+
+        <ul>
+            <li class="col-4"><img src="Copy of lights.jpg" alt=""></li>
+            <li class="col-4"><img src="Copy of mountains.jpg" alt=""></li>
+            <li class="col-4"><img src="Copy of nature.jpg" alt=""></li>
+        </ul>
+        
+    </div>
+
+
+<div class="col-12 ">
+    <div class="foot col-3">
+        <h4>Biljke</h4>
+        <p>Sreca - to je biti sa prirodo, gledati je i s njom govoriti </p>
+        <p>L.N. Tolstoj</p>
+    </div>
+
+    <div class="foot col-4">
+        <h4>Zivotinje</h4>
+        <p>Priroda je jedina knjiga koja na svim listovima nudi mnoo sadrzaja</p>
+        <p>Goethe</p>
+    </div>
+
+    <div class="foot col-5">
+        <h4>Pejzazi</h4>
+        <p>Priroda nam skriva svoje tajne jer je velicanstvena, a ne jer je varalica.
+            zagledaj se duboko u prirodu i tada ces sve bolje razumeti</p>
+        
+        <p id="p1" >Anbert Einstein</p>
+    </div>
+
+</div>
+
+    <footer class="col-12 ">Dobrodosli na nas sajt</footer>
+<script>
+    alert ("zeleno svetlo");
+    document.write ("Zdravo svete");
+    console.log ("Ja se zovem Miodrag");
+    document.getElementById("p1").innerHTML = "Milek Cizmic";
+
+</script>
+</body>
+</html>

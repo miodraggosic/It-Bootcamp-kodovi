@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResWD-Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* mobile */
+ @media only screen and (max-width: 480px) {
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+
+        /* tablet */
+
+@media only screen and (min-width: 480px) {
+
+    [class*="col-"] {
+        float: left;
+        padding: 25px;
+
+        }
+
+        .colt-1 {
+            width: 8.33%;
+        }
+
+        .colt-2 {
+            width: 16.66%;
+        }
+
+        .colt-3 {
+            width: 25%;
+        }
+
+        .colt-4 {
+            width: 33.32%;
+        }
+
+        .colt-5 {
+            width: 41.66%;
+        }
+
+        .colt-6 {
+            width: 50%;
+        }
+
+        .colt-7 {
+            width: 58.33%;
+        }
+
+        .colt-8 {
+            width: 66.66%;
+        }
+
+        .colt-9 {
+            width: 75%;
+        }
+
+        .colt-10 {
+            width: 83.33%;
+        }
+
+        .colt-11 {
+            width: 91.66%;
+        }
+
+        .colt-12 {
+            width: 100%;
+        }
+      
+
+        
+        }
+
+
+        /* desktop */
+  @media only screen and (min-width: 968px ) {
+            
+    [class*="col-"] {
+        float: left;
+        padding: 25px;
+
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.32%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        }
+
+        /* selektovanje elementa sa prefiksima */
+
+       
+
+     
+
+        header {
+            background-color: beige;
+        }
+
+        nav {
+            background-color: rgb(169, 133, 204);
+        }
+
+        section {
+            background: rgb(146, 137, 102);
+        }
+
+        aside {
+            background-color: cyan;
+        }
+
+        footer {
+            background-color: darkmagenta;
+        }
+       
+
+
+      
+
+    </style>
+</head>
+
+<body>
+    <header class="col-12 colt-12 ">Header</header>
+    
+    <nav class="col-3 colt-12">Nav</nav>
+
+    <section class="col-6 colt-5 ">Section</section>
+
+    <aside class="col-3 colt-7">Aside</aside>
+
+    <footer class="col-12 colt-12">Footer</footer>
+
+
+    
+</body>
+</html>
