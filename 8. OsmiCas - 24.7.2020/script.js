@@ -171,31 +171,33 @@ if (hour < 12) {
 
 //zadatak 10
 
-let d1 = 24;
-let m1 = 10;
-let g1 = 1998;
+let d1 = 15;
+let m1 = 8;
+let g1 = 2001;
 
 let d2 = 12;
-let m2 = 8;
+let m2 = 5;
 let g2 = 1998;
 
 if (g1 < g2) {
     console.log (g1);
-} else if (g1 == g2) {
-    if (m1 < m2) {
-        console.log (g1,m1);
-    } else if (m1 == m2) {
-        if (d1 < d2) {
-            console.log (d1, m1, g1);
+} 
+if (g2 < g1) {
+    console.log (g2)
+}
+     if (g1 == g2) {
+        if (m1 < m2) {
+            console.log (g1,m1);
+        } else if (m1 == m2) {
+
+            if (d1 < d2) {
+                console.log (d1, m1, g1);
+            }
+            else {
+                console.log (d2, m2, g2);
+            }
         }
-    }
-} else {
+else {
     console.log (d2, m2, g2);
 }
-    // } else  { 
-    //     if (d1 < d2) {
-    //         console.log (d1, m1, g1);
-    //     } else {
-    //         console.log (d2, m2, g2);
-    //     }
-    //  
+}
