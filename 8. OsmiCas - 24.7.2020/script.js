@@ -201,3 +201,94 @@ else {
     console.log (d2, m2, g2);
 }
 }
+
+
+// zadatak 11
+
+//radno vreme betwen 9 i 15
+let rVs = 9 * 60;
+console.log (rVs);
+
+let rVk = 17 * 60;
+console.log (rVk);
+
+if (hour * 60 + min < rVs) {
+    console.log ("Closed");
+} else if (hour * 60 + min < rVk) {
+    console.log ("Open");
+} 
+
+else {
+    console.log ("Closed");
+}
+
+
+//zadatak 12
+
+let lk1s = 21;
+let lk2s = 3;
+let lk1k = 5;
+let lk2k = 11; 
+
+// if (lk1k  < lk2s && lk1s < lk2k) {
+//     console.log ("ne preklapaju se");
+// } else if (lk2k  < lk1s && lk2s < lk1k) {
+//     console.log ("ne preklapaju se");
+// } 
+
+// else {
+//     console.log ("preklapaju se")
+// }
+
+if (lk1s < lk2s && lk1k < lk2s) {
+    console.log ("ne preklapaju se");
+} else if (lk2s  < lk1s && lk2k < lk1k) {
+    console.log ("ne preklapaju se");
+} 
+
+else {
+    console.log ("preklapaju se")
+}
+
+
+
+
+//zadatak 13
+
+let No = 15;
+
+if (No % 2 == 0) {
+    console.log ("paran br");
+} else {
+    console.log ("neparan br");
+}
+
+
+//zadatak 14
+
+if (No % 3 == 0) {
+    console.log ("deljiv sa 3");
+} else {
+    console.log ("broj nije deljiv sa tri");
+}
+
+// zadatak 15
+let br1 = 72;
+let br2 = 82;
+let veci = br1;
+
+if (br1 == br2) {
+    console.log ("jednaki brojevi")
+} else if (veci < br2){
+    veci = br2; 
+    console.log (veci);
+} else {
+    console.log (veci);
+}
+
+
+
+
+
+
+
