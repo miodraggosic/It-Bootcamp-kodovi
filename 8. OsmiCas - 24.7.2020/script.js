@@ -225,10 +225,10 @@ else {
 
 //zadatak 12
 
-let lk1s = 21;
-let lk2s = 3;
-let lk1k = 5;
-let lk2k = 11; 
+let lk1s = 0;
+let lk2s = 21;
+let lk1k = 8;
+let lk2k = 5; 
 
 // if (lk1k  < lk2s && lk1s < lk2k) {
 //     console.log ("ne preklapaju se");
@@ -241,13 +241,15 @@ let lk2k = 11;
 // }
 
 if (lk1s < lk2s && lk1k < lk2s) {
-    console.log ("ne preklapaju se");
-} else if (lk2s  < lk1s && lk2k < lk1k) {
-    console.log ("ne preklapaju se");
+    console.log ("ne");
+} else if (lk1s > lk2s && lk1k < lk2k) {
+        console.log ("da");
+} else if (lk2s  < lk1s && lk2k < lk1s) {
+    console.log ("ne");
 } 
 
 else {
-    console.log ("preklapaju se")
+    console.log ("da")
 }
 
 
@@ -273,8 +275,8 @@ if (No % 3 == 0) {
 }
 
 // zadatak 15
-let br1 = 72;
-let br2 = 82;
+let br1 = 342;
+let br2 = 182;
 let veci = br1;
 
 if (br1 == br2) {
@@ -285,6 +287,66 @@ if (br1 == br2) {
 } else {
     console.log (veci);
 }
+
+// zadatak 16
+
+if (br1 == 0) {
+    console.log ("broj jednak nuli");
+} else if (br1 <= 0) {
+    br1--;
+    console.log (br1);
+} else {
+    br1++;
+    console.log (br1);
+}
+
+
+// zadatak 17
+let broj1 = 95;
+let broj2 = 48;
+let broj3 = 27;
+console.log (broj1,broj2,broj3);
+let max1 = broj1;
+let min1 = broj3;
+
+if (max1 < broj2) {
+    max1 = broj2;
+}
+if (max1 < broj3) {
+    max1 = broj3;
+}
+console.log (max1);
+
+if (min1 > broj1) {
+    min1 = broj1;
+}
+if (min1 > broj2) {
+    min1 = broj2;
+}
+console.log (min1);
+
+if (broj1 != min1 && broj1 != max1) {
+    console.log (broj1);
+} else if (broj2 != min1 && broj2 != max1) {
+    console.log (broj2);
+} else {
+    console.log (broj3);
+}
+
+// zadatak 18
+
+let ceo = 15;
+
+
+if (ceo % 2 == 0) {
+    console.log ("broj pripada skupu celih brojeva");
+} else if (ceo % 2 == 1 || ceo % 2 == -1) {
+    console.log ("broj pripada skupu celih brojeva");
+} else {
+    console.log ("broj ne pripada skupu celih brojeva");
+}
+
+// zadatak 19
 
 
 
