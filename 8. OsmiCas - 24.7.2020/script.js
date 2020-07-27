@@ -68,15 +68,15 @@ let divpol = document.getElementById("pol");
 let pol = "m";
 // let izbor1 = document.getElementsById ("Male");
 // let izbor2 = document.getElementsById ("Fame");
-
+function getPol () {
 if (document.getElementById("Male").checked) {
     // Muski pol
     divpol.innerHTML = '<img src="male.png">';
-} else if (document.getElementById("Male").checked) {
+} else if (document.getElementById("Fame").checked) {
     //Zenski pol
     divpol.innerHTML = '<img src="person.png">';
 }
-
+}
 
 // zadatak 4
 
