@@ -69,13 +69,13 @@ let pol = "m";
 // let izbor1 = document.getElementsById ("Male");
 // let izbor2 = document.getElementsById ("Fame");
 function getPol () {
-if (document.getElementById("Male").checked) {
-    // Muski pol
-    divpol.innerHTML = '<img src="male.png">';
-} else if (document.getElementById("Fame").checked) {
-    //Zenski pol
-    divpol.innerHTML = '<img src="person.png">';
-}
+    if (document.getElementById("Male").checked) {
+        // Muski pol
+        divpol.innerHTML = '<img src="male.png">';
+    } else if (document.getElementById("Fame").checked) {
+        //Zenski pol
+        divpol.innerHTML = '<img src="person.png">';
+    }
 }
 
 // zadatak 4
@@ -333,6 +333,11 @@ if (broj1 != min1 && broj1 != max1) {
     console.log (broj3);
 }
 
+// drugo resenje
+// srednji
+// let srednji = broj1 + broj2 + broj3 - min1 - max1;
+
+
 // zadatak 18
 
 let ceo = 15;
@@ -346,8 +351,70 @@ if (ceo % 2 == 0) {
     console.log ("broj ne pripada skupu celih brojeva");
 }
 
-// zadatak 19
+// da se pita da li je integer
 
+// zadatak js vezbamnje
+
+
+let racun = 4500;
+let brKupovina = 13;
+let popust1 = racun * 0.9; //10% popusta
+let popust2 = racun * 0.8; //20% popusta
+let popust3 = racun * 0.6; //40% popusta
+
+
+
+
+
+
+//zadatak 21
+
+console.log (broj1,broj2,broj3);
+
+if (broj1 > broj2 && broj1 > broj3) {
+    console.log ("br1 je najveci");
+} else if (broj2 > broj1 && broj2 > broj3) {
+    console.log ("br2 je najveci");
+} else {
+    console.log ("br3 je najveci");
+}
+
+
+//zadatak 23
+let godiste = 2000;
+
+if (godiste % 4 == 0 && godiste % 100 != 0 || godiste % 400 ==0 ){
+    console.log ("prestupna godina");
+} else {
+    console.log ("nije prestupna godina");
+}
+
+
+//zadatak 
+let minn = 224;
+let minuti = minn % 60;
+let sati = Math.trunc(minn/30);
+
+
+//zadatak 25
+
+let dan1 = 5;
+let sati1 = 21;
+let minutes = 42;
+
+if (dan1 == 0 || dan1 == 6) {
+    if (sati1 >= 10 && sati1 < 18) {
+        console.log (" vikend otvoreno");
+    } else {
+        console.log (" vikend zatvoreno");
+    }
+} else {
+    if (sati1 >= 9 && sati1 < 20) {
+        console.log (" radni otvoreno");
+    } else {
+        console.log (" radni zatvoreno");
+    }
+}
 
 
 
