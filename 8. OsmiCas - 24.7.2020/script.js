@@ -148,7 +148,7 @@ if (poeni < 50) {
 //zadatak 8 
 
 let dan = date.getDay();
-
+dan++;
 console.log (dan);
 
 if (dan <= 5) {
@@ -226,9 +226,9 @@ else {
 //zadatak 12
 
 let lk1s = 0;
-let lk2s = 21;
 let lk1k = 8;
-let lk2k = 5; 
+let lk2s = 7;
+let lk2k = 18; 
 
 // if (lk1k  < lk2s && lk1s < lk2k) {
 //     console.log ("ne preklapaju se");
@@ -240,14 +240,9 @@ let lk2k = 5;
 //     console.log ("preklapaju se")
 // }
 
-if (lk1s < lk2s && lk1k < lk2s) {
-    console.log ("ne");
-} else if (lk1s > lk2s && lk1k < lk2k) {
-        console.log ("da");
-} else if (lk2s  < lk1s && lk2k < lk1s) {
+if (lk1k < lk2s || lk2k < lk1s) {
     console.log ("ne");
 } 
-
 else {
     console.log ("da")
 }
@@ -290,9 +285,7 @@ if (br1 == br2) {
 
 // zadatak 16
 
-if (br1 == 0) {
-    console.log ("broj jednak nuli");
-} else if (br1 <= 0) {
+if (br1 <= 0) {
     br1--;
     console.log (br1);
 } else {
