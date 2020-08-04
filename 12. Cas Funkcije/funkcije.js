@@ -80,6 +80,16 @@ function maks2 (br1, br2) {
         return veci;
     }
 }
+// drugi nacin
+let maks = (a, b) => {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+
 
 let maks = maks2 (12, 9);
 console.log (maks);
@@ -106,6 +116,19 @@ function maks4 (a,b,c,d) {
 
 let maksCetri = maks4(7,9,14,45);
 console.log (maksCetri);
+
+//maks4 drugo resenje
+
+let max4 = (a,b,c,d) => {
+    let m1 = maks2(a, b);
+    let m2 = maks2(c,d);
+    let m3 = maks2(m1, m2);
+    return m3;
+}
+
+let maksN = (a, b, c, d) => maks2(maks2(a, b), maks2(c,d));
+
+let maxN = (a, b, c, d) => maks2(maks2(maks2 (a,b),c),d);
 
 
 function showPic (url) {
