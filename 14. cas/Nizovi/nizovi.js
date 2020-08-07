@@ -208,15 +208,28 @@ console.log (menjamNeparPar(niz));
 //zadatak 16
 
 let shop = ["secer", "brasno", "voda", "mleko"];
-let divShop = document.getElementById("shop");
+let divShop = document.getElementById("lista");
 let kupovina = nekiNiz => {
     for (i = 0; i < shop.length; i++) {
-        divShop.innerHTML += `<ul><li>${shop[i]}<li></ul>`;
+        divShop.innerHTML += `<li>${shop[i]}</li>`;
     }
 
 }
 
+//druginacin
+
+let shoping = niz => {
+    let rez = "<ul>";
+    niz.forEach(elem => {
+        rez += `<li> ${elem} </li>`;
+    });
+    result += "</ul>";
+    divShop.innerHTML = result;
+}
+
 kupovina(shop);
+
+shoping(shop);
 
 
 //zadatak 17
