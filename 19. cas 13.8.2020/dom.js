@@ -98,15 +98,15 @@ for (i = 0; i < divs.length; i++) {
 
 let brParag = document.querySelectorAll("p");
 
-brParag.forEach ((p, i) => {
-    p.innerHTML += (i + 1)**2;
-    p.style.color = "purple";
-    if(i % 2 == 0) {
-        p.style.backgroundColor = "green";
-    } else {
-        p.style.backgroundColor = "red";
-    }
-});
+// brParag.forEach ((p, i) => {
+//     p.innerHTML += (i + 1)**2;
+//     p.style.color = "purple";
+//     if(i % 2 == 0) {
+//         p.style.backgroundColor = "green";
+//     } else {
+//         p.style.backgroundColor = "red";
+//     }
+// });
 
 
 for (i = 0; i < slika.length; i++) {
@@ -133,7 +133,7 @@ console.log (atag[1].parentNode.childNodes);
 
 let imena = ["Milos", "Marko", "Strahinja"];
 
-let ispis = imena => {
+let ispisLink = imena => {
     let rez = "";
     imena.forEach(name => {
         if (name[0] == "S") {
@@ -146,7 +146,126 @@ let ispis = imena => {
     divIme.innerHTML = rez;
 };
 
-ispis(imena);
+ispisLink(imena);
+
+let ispisLista = imena => {
+    let rez = "<ul>";
+    imena.forEach((name, i) => {
+        if (i % 2  == 0) {
+            rez += `<li>${name}</li> `;
+            
+        } else {
+            rez += `<li>${name}</li> `;
+            
+        }
+    });
+    rez += "</ul>";
+    let divIme = document.querySelector("div.zadnji2");
+    divIme.innerHTML = rez;
+};
+ispisLista (imena);
+
+let listNames = document.getElementsByTagName("li");
+console.log (listNames);
+
+for (i = 0; i < listNames.length; i++) {
+    if (i % 2 == 0) {
+        listNames[i].style.color = "red";
+    } else {
+        listNames[i].style.color = "green";
+    }
+}
+
+
+let ispisTabela = imena => {
+    let rez = "<table>";
+    imena.forEach(name => {
+        rez += `<tr> 
+                 <td> ${name}</td>
+                <tr>`;
+    });
+    rez += "</table>";
+    let divIme = document.querySelector("div.zadnji3");
+    divIme.innerHTML = rez;
+   
+};
+
+ispisTabela(imena);
+
+let svojstva = document.querySelectorAll("table:last-child td");
+
+svojstva.forEach (name => {
+    name.setAttribute ('style', 'border: 2px solid; margin: 5px; padding: 5px;');
+});
+
+
+//prvi zadatak 16. slajd
+
+// brParag.forEach ((p, i) => {
+//     if (i % 2 == 0) {
+//         p.classList.add("error1")
+//     } else {
+//         p.classList.add("success1")
+//     }
+// });
+
+
+// kreiranje cvorova i elemenata
+
+
+let noviParaf = document.createElement("p");
+noviParaf.innerHTML = "Ovo je novi paragraf";
+document.body.appendChild(noviParaf);
+
+// brisanje cvora
+
+// document.body.removeChild(noviParaf);
+
+
+let noviLink = document.createElement("a");
+noviLink.innerHTML = "klikni";
+noviLink.href = "https://www.google.com";
+
+document.body.replaceChild (noviLink, noviParaf);
+
+
+noviLink.classList.add ("success1");
+
+
+// 2 zadatak 16.slajd
+
+brParag.forEach ((p, i ) => {
+    if (i % 3 == 0) {
+        p.style.fontSize = "15px";
+    } else if (i % 3 == 1) {
+        p.style.fontSize = "20px";
+    } else if (i % 3 == 2) {
+        p.style.fontSize = "25px";
+    }
+
+});
+
+
+// 3 zadatak 16 slajd
+
+
+brParag.forEach ( p => {
+    if (p.textContent.includes("success")) {
+        p.classList.add("success1");
+    } else if (p.textContent.includes("error")) {
+        p.classList.add ("error1");
+    }
+});
+
+
+// 4 zadatak 16 slajd
+
+brParag.forEach (p => {
+    p.classList.toggle ("error1");
+});
+
+
+
 
 
 
