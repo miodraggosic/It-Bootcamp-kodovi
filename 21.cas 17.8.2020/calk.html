@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calkulator</title>
+</head>
+<body>
+    <form action="">
+        <label for=""> Prvi broj:</label>
+        <input type="text" name="" id="num1" value="0">
+        <br><br>
+
+        <label for="">Drugi broj: </label>
+        <input type="text" name="" id="num2" value="0">
+        <br><br>
+
+        <input type="radio" value="+" name="op" checked > +
+        <input type="radio" value="-" name="op"> - 
+        <input type="radio" value="*" name="op" > * 
+        <input type="radio" value="/" name="op" > /
+        <br><br>
+        <input type="submit" value="Izracunaj">
+    </form>
+    <p id="rez"></p>
+
+    <form action="">
+        <fieldset>
+            <legend>Prijava na konkurs</legend>
+            <div>
+                <label>Ime i prezime: </label>
+                <input type="text" id="name" placeholder="Ime i prezime">
+            </div>
+            <div>
+                <label>Pol:</label>
+                <input type="radio" name="gender" id="" value="m">muški
+                <input type="radio" name="gender" id="" value="f">ženski
+                <input type="radio" name="gender" id="" value="o" checked>drugo
+            </div>
+            <div>
+                <label>Tehnologije:</label>
+                <input type="checkbox" name="tech" id="" value="HTML">HTML
+                <input type="checkbox" name="tech" id="" value="CSS">CSS
+                <input type="checkbox" name="tech" id="" value="JS">JS
+            </div>
+            <div>
+                <input type="submit" value="Potvrdi" id="submit">
+            </div>
+        </fieldset>
+    </form>
+    <p id="result"></p>
+
+    <script src="calk.js"></script>
+</body>
+</html>
