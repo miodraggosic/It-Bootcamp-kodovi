@@ -215,6 +215,38 @@ getKorisniciWeb((greska, gradovi) => {
     }
 });
 
+let getSportistiWeb = callback => {
+
+    let req = new XMLHttpRequest();
+    req.addEventListener('readystatechange', function () {
+        if (this.readyState === 4 && this.status === 200) {
+            let data = JSON.parse(this.responseText);
+            callback(undefined, data);
+        } else if (this.readyState === 4) {
+            callback('Server nije mogao da obradi zahtev', undefined);
+        }
+    });
+
+    req.open('GET', 'http://localhost:3000/sportisti');
+    req.send();
+
+};
+
+
+getSportistiWeb((greska, name) => {
+    if (greska) {
+        let div = document.getElementById('error');
+        div.textContent = greska;
+    } else {
+        name.forEach(player => {
+            console.log(player.imePrezime);
+        });
+    }
+});
+
+
+
+
 
 
 
