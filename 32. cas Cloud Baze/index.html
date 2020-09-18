@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <div id="ispis"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBF4M2llImm0CEsSmIcRw0LU5b5gz8tYeQ",
+    authDomain: "it-bootcamp-14d43.firebaseapp.com",
+    databaseURL: "https://it-bootcamp-14d43.firebaseio.com",
+    projectId: "it-bootcamp-14d43",
+    storageBucket: "it-bootcamp-14d43.appspot.com",
+    messagingSenderId: "318944346009",
+    appId: "1:318944346009:web:0f4dfb9305867694999d08"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  let db = firebase.firestore();
+</script>
+    <script src="script2.js"></script>
+</body>
+</html>
