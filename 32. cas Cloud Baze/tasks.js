@@ -32,7 +32,7 @@ db.collection('tasks').onSnapshot(snapshot => {
             btn.innerHTML = 'delete task';
             li.appendChild(btn);
         } else if (type == 'removed') {
-            let lis = document.querySelector("li");
+            let lis = document.querySelectorAll("li");
             lis.forEach(li => {
                 if(li.getAttribute('data-id') == id) {
                     li.remove();
@@ -68,8 +68,17 @@ form.addEventListener('submit', function (event) {
     });
 });
 
-li.addEventListener('click', event => {
+ul.addEventListener('click', event => {
     if(event.target.tagName == 'BUTTON') {
-        
+        let id = event.target.parentElement.getAttribute('data-id');
+        // console.log(id);
+        db.collection('tasks').doc(id)
+        .delete()
+        .then(() => {
+            alert('Task uspesno obrisan!');
+        })
+        .catch(err => {
+            alert(`Greska pri brisanju taska: ${err}`);
+        });
     }
-})
+});
