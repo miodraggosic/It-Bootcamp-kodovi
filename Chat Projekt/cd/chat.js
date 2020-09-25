@@ -20,19 +20,19 @@ export class Chatroom {
     }
 
      async addChat (msg) {
-        let date = new Date();
-        let doc = {
-            message: msg,
-            username: this.username,
-            room: this.room,
-            created_at: firebase.firestore.Timestamp.fromDate(date),
-        };
-        let response = await this.chats.add(doc).then(() => {
-            console.log('Message succesfully added');
-        }).catch(error => {
-            console.log(`Cannot add message: ${error}`);
-        });
-        return response;
+         if (msg != '') {
+             let date = new Date();
+             let doc = {
+                 message: msg,
+                 username: this.username,
+                 room: this.room,
+                 created_at: firebase.firestore.Timestamp.fromDate(date),
+             };
+             let response = await this.chats.add(doc);
+             return response;
+         } else {
+             alert ("You cant send empty message");
+         }
     }
 
     getChats (callback) {
@@ -47,10 +47,18 @@ export class Chatroom {
             });
         });
     }
+    
+    
 
     updateUsername (newUser) {
-        this.username = newUser;
-        localStorage.setItem('userName', newUser);
+        if(newUser.length > 2 && newUser.length < 10 && !newUser.includes(' ') && !newUser.includes('   ')) {
+            this.username = newUser;
+            localStorage.setItem('userName', newUser);
+        } else {
+            alert('User name must be betwen 2 and 10 characters with no whitespace!');
+        }
+        
+        
     }
 
     updateRoom (roomName) {

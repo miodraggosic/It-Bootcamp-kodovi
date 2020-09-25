@@ -55,8 +55,8 @@ export class ChatUI {
         let dateStr = this.formatDate(date);
         let dateFinal = this.dateToday(dateStr);
         
-        user.textContent =`${doc.username} :`;
-        msg.textContent = ` ${doc.message}`;
+        user.textContent =`${doc.username}`;
+        msg.textContent = `: ${doc.message}`;
         time.textContent = dateFinal;
 
         li.appendChild(user);

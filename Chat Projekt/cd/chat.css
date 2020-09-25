@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(252, 255, 212, 0.445);
+}
+
+@media only screen and (max-width: 600px) {
+    .col-4-m {
+        width: 48%;
+    }
+}
+
+    h1, h3 {
+        text-align: center;
+        color: rgb(130, 23, 184);
+    }
+    
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        background-color: #d498ece3;
+        color: azure;
+        font-size: 18px;
+        padding: 5px;
+        margin: 5px 2px;
+    }
+    nav a:hover {
+        background-color: #fece00;
+    }
+    
+    .clicked {
+        background-color: #21cbc0ad;
+    }
+    
+    #msgText {
+        display: inline-block;
+        width: 50%;
+    }
+    #updateUser {
+        display: inline-block;
+        width: 50%;
+    }
+    #btnSend {
+        color: #fece00;
+        background-color: #21cbc0ad;
+        display: inline-block;
+        width: 25%;
+    }
+    #btnUpdate {
+        color: #21cbc0ad;
+        background-color: #fece00;
+        display: inline-block;
+        width: 25%;
+    }
+    #ntf {
+        position: fixed;
+        background-color: rgba(193, 137, 231, 0.753);
+        bottom: 0px;
+        margin: 10px;
+        display: none;
+        padding: 20px 50px;
+        font-size: 25px;
+        z-index: 1;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .user {
+        color: #044653c7;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    .msg {
+        color: #ffffff;
+    }
+    #msg {
+        
+        margin-bottom: 20%;
+        
+    }
+    li {
+        background-color: #21cbc0ad;
+        padding: 5px 0;
+        width: 50%;
+        margin: 5px;
+        padding-top: 15px;
+        margin-left: 10%;
+        border-radius: 5%;
+        border-top-left-radius: 0%;
+        text-align: center;
+    }
+    
+    .curUser {
+        background-color: #fece00;
+        padding: 5px 0;
+        width: 50%;
+        margin: 5px;
+        padding-top: 15px;
+        margin-left: 30%;
+        border-radius: 5%;
+        border-top-right-radius: 0%;
+    }
+    p {
+        text-align: right;
+        color: rgba(104, 103, 103, 0.808);
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    
+    footer {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        margin: 10px 0;
+    }

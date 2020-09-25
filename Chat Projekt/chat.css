@@ -6,10 +6,20 @@ h1, h3 {
     text-align: center;
 }
 
-a {
+nav a {
+    text-decoration: none;
     display: inline-block;
     width: 24%;
     text-align: center;
+    background-color: #b654dde3;
+    color: azure;
+}
+nav a:hover {
+    background-color: bisque;
+}
+
+.clicked {
+    background-color: cadetblue;
 }
 
 #msgText {
@@ -28,10 +38,10 @@ a {
     display: inline-block;
     width: 25%;
 }
-#msg {
+/* #msg {
     text-align: center;
     position: relative;
-}
+} */
 ul {
     list-style: none;
     padding: 0;
@@ -47,8 +57,8 @@ li {
     background-color: #f1d9fc;
     padding: 5px 0;
     width: 50%;
-    margin: 5px auto;
-    
+    margin: 5px;
+    margin-left: 10%;
     border-radius: 15%;
     border-top-left-radius: 0%;
 }
